@@ -8,13 +8,27 @@
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/bridge-anim.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "FFCBA4"
     },
     "ios": {
       "supportsTablet": true
     },
+    "fonts": [
+      {
+        "Poppins": [
+          "./assets/fonts/Poppins-Regular.ttf",
+          "./assets/fonts/Poppins-Bold.ttf"
+        ]
+      },
+      {
+        "DancingScript": [
+          "./assets/fonts/DancingScript-Regular.ttf",
+          "./assets/fonts/DancingScript-Bold.ttf"
+        ]
+      }
+    ],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
@@ -23,6 +37,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
