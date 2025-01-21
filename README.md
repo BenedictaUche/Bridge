@@ -86,7 +86,7 @@ Bridge/
 ### **Installation**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/BenedictaUche/bridge.git
+   git clone https://github.com/BenedictaUche/Bridge.git
    cd bridge-app
    ```
 
