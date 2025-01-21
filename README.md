@@ -1,4 +1,4 @@
-# **Bridge App **
+# **Bridge App**
 
 **Bridge** is a personal assistant app designed to help introverts, socially anxious individuals, and anyone who struggles with maintaining connections without feeling overwhelmed. Bridge acts as a "buffer" between you and your social interactions, offering gentle reminders, social energy tracking, and tools to stay connected in a low-pressure, manageable way.
 
