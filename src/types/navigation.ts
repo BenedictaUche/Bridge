@@ -7,4 +7,12 @@ export type RootStackParamList = {
     Login: undefined;
     Home: undefined;
     Profile: undefined;
+    ComposeMessage: undefined;
+    Journal: undefined;
+    Settings: undefined;
+    Reminders: undefined;
+    SocialEnergy: undefined;
+    Nudges: undefined;
+    Drafts: undefined;
+    AddReminder: undefined;
   };

@@ -8,6 +8,14 @@ import LoginScreen from '../screens/LoginScreen';
 import HomeScreen from '../screens/HomeScreen';
 import { RootStackParamList } from '../types/navigation';
 import MidScreen from '../screens/MidScreen';
+import ComposeMessageScreen from '../screens/ComposeMessageScreen';
+import JournalScreen from '../screens/JournalScreen';
+import SettingsScreen from '../screens/SettingsScreen';
+import RemindersScreen from '../screens/RemindersScreen';
+import SocialEnergyScreen from '../screens/SocialEnergyScreen';
+import NudgesScreen from '../screens/NudgesScreen';
+import DraftsScreen from '../screens/DraftsScreen';
+import AddReminderScreen from '../screens/AddReminderScreen';
 
 const Stack = createStackNavigator<RootStackParamList>();
 
@@ -17,40 +25,26 @@ const AppNavigator = () => {
       initialRouteName="Splash"
       screenOptions={{ headerShown: false }}
     >
-      <Stack.Screen
-        name="Splash"
-        component={SplashScreen}
-      />
+      {/* Initial Screens */}
+      <Stack.Screen name="Splash" component={SplashScreen} />
+      <Stack.Screen name="Welcome" component={WelcomeScreen} />
+      <Stack.Screen name="Onboarding" component={OnboardingScreen} />
+      <Stack.Screen name="Mid" component={MidScreen} />
+      <Stack.Screen name="SignUp" component={SignUpScreen} />
+      <Stack.Screen name="Login" component={LoginScreen} />
 
-      <Stack.Screen
-        name="Welcome"
-        component={WelcomeScreen}
-      />
+      {/* Main App Screens */}
+      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="ComposeMessage" component={ComposeMessageScreen} />
+      <Stack.Screen name="Journal" component={JournalScreen} />
+      <Stack.Screen name="Settings" component={SettingsScreen} />
 
-      <Stack.Screen
-        name="Onboarding"
-        component={OnboardingScreen}
-      />
-
-<Stack.Screen
-        name="Mid"
-        component={MidScreen}
-      />
-
-      <Stack.Screen
-        name="SignUp"
-        component={SignUpScreen}
-      />
-
-      <Stack.Screen
-        name="Login"
-        component={LoginScreen}
-      />
-
-      <Stack.Screen
-        name="Home"
-        component={HomeScreen}
-      />
+      {/* Feature Screens */}
+      <Stack.Screen name="Reminders" component={RemindersScreen} />
+      <Stack.Screen name="SocialEnergy" component={SocialEnergyScreen} />
+      <Stack.Screen name="Nudges" component={NudgesScreen} />
+      <Stack.Screen name="Drafts" component={DraftsScreen} />
+      <Stack.Screen name="AddReminder" component={AddReminderScreen} />
     </Stack.Navigator>
   );
 };
